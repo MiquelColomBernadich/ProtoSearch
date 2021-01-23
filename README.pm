@@ -42,4 +42,4 @@ Each of them has an extensive header providing further details on their usage an
 They also rely on 5 further scripts to perform some computations and data manipulations.
 Thes are dm.py, dmFactor.py, findPeriod.py, findSN.py and time.py. None of these are intended to be used by the user directly, but they also have headers expaining their functions.
 
-
+For any doubts or bug reports contact mcbernadich@mpifr-bonn.mpg.de.
