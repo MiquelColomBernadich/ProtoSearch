@@ -13,7 +13,7 @@ Further development in the future is unlikelly but not impossible.
 It is necessary to have python3 and numpy for python3 installed for the pipeline to work. This can be done through the following commands:
 ```shell
 sudo apt-get update
-sudo apt-gey install python3
+sudo apt-get install python3
 ```
 And:
 ```sehll
