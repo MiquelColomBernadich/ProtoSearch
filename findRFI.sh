@@ -2,7 +2,7 @@
 #
 #-------------------------------------------------------------------------------------------------------------------------#
 # Call the "seek" SIGPROC search command on the first 10 cm-3/pc DM interval to look for strong RFI signals.
-# The DM step is computed as indicated in ().
+# The DM step is computed as indicated in equation 6.6 from Lorimer & Kramer (2005).
 #-------------------------------------------------------------------------------------------------------------------------#
 # Calls dmFactor.py
 #-------------------------------------------------------------------------------------------------------------------------#
