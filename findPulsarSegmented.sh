@@ -1,7 +1,8 @@
 #!/bin/bash
 #
 #-------------------------------------------------------------------------------------------------------------------------#
-# Perform a search from DM=10 cm-3/pc to DM={chunks}*{nchannels}*DM_step, where the DM step is computed as indicated in ().
+# Perform a search from DM=10 cm-3/pc to DM={chunks}*{nchannels}*DM_step, where the DM step is computed as indicated in
+# equation 6.6 from Lorimer & Kramer (2005).
 # Every interval DM of {nchannels}*DM_step is called a "chunk", and after effective DM step is {chunk}*DM_step, if chunk
 # were to start by 1. The search is done through the "seek" sigpoc command and it is able to read a birdies wile in the
 # folder were this script is stored.
