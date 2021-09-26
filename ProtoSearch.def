@@ -1,0 +1,27 @@
+Bootstrap: docker
+From: mpifrpsr/sigproc
+
+%files
+	{write the directory where you keep the scripts here} /home/psr/pipelinev5
+
+%post
+	apt-get update
+  apt-get install -y python3
+	apt-get install -y python3-numpy
+	apt-get install -y emacs
+  
+%help
+  SIGPROC-based pulsar search pipeline built with the intent of training the contributor.
+  It can search throgh a specified range of DM values, fold at a desired period value or zap undiserid frequencies in the Fourirer domain.
+  As of now, no acceleration search is included.
+  This pipeline is very easy to edit and improve, as it only uses two layers of scripts: the mother scripts and the ones they rely on.
+  Further development in the future is unlikelly but not impossible.
+  There are 5 main scripts and and 5 auxiliary ones.
+  The main scripts consist of findCandidates.sh, findPulsarInterval.sh, findPulsarSegmented.sh, findRFI.sh and foundPulsar.sh.
+  These are intended to work as the "mother scripts" that the user relies on.
+  Each of them has an extensive header providing further details on their usage and functionality.
+  They also rely on 5 further scripts to perform some computations and data manipulations.
+  Thes are dm.py, dmFactor.py, findPeriod.py, findSN.py and time.py.
+  None of these are intended to be used by the user directly, but they also have headers expaining their functions.
+  More details are found in the README file or the script's headers.
+  For any doubts or bug reports contact mcbernadich@mpifr-bonn.mpg.de.
